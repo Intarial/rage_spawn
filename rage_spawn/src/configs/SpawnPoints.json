@@ -1,0 +1,27 @@
+[
+  {
+    "trigger": "army",
+    "name": "U.S. ARMY",
+    "position": { "x": 794, "y": 847 }
+  },
+  {
+    "trigger": "gov",
+    "name": "Government",
+    "position": { "x": 1326, "y": 610 }
+  },
+  {
+    "trigger": "ballas",
+    "name": "Ballas Gang",
+    "position": { "x": 1423, "y": 585 }
+  },
+  {
+    "trigger": "sheriff",
+    "name": "Sheriff Department",
+    "position": { "x": 438, "y": 664 }
+  },
+  {
+    "trigger": "airport",
+    "name": "Аэропорт",
+    "position": { "x": 1560, "y": 741 }
+  }
+]

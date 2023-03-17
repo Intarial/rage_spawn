@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+  position: absolute;
+
+  .icon {
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    svg {
+      z-index: 1;
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .textInfo {
+    padding: 8px 10px;
+    min-width: 163px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+  }
+}

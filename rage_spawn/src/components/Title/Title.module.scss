@@ -1,0 +1,48 @@
+@import '../../assets/styles/global.scss';
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  .icon {
+    width: 67px;
+    height: 67px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    transition: .3s;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gradient;
+
+    svg {
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      color: #FFFFFF;
+    }
+
+    p {
+      width: 373px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
