@@ -27,6 +27,9 @@
     "lint-fix": "eslint ./src --fix"
   },
   "eslintConfig": {
+    "globals": {
+      "mp": true
+    },
     "extends": [
       "react-app",
       "react-app/jest"

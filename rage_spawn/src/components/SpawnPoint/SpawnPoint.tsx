@@ -7,9 +7,11 @@ import { IconLocation } from '@ui/Icons/Icons';
 interface ISpawnPoint {
   position: { x: number, y: number }
   name: string
+  active: boolean
+  click: () => void
 }
 
-export const SpawnPoint: React.FC<ISpawnPoint> = ({ position, name }) => {
+export const SpawnPoint: React.FC<ISpawnPoint> = ({ position, name, active, click }) => {
   const [gradient, setGradient] = useState(false);
 
   const windowHeight = window.innerHeight;
@@ -19,6 +21,7 @@ export const SpawnPoint: React.FC<ISpawnPoint> = ({ position, name }) => {
     <div
       onMouseMove={ () => setGradient(true) }
       onMouseLeave={ () => setGradient(false) }
+      onClick={ click }
       className={ styles.wrapper }
       style={{
         left: (position.x * ratio / windowHeight * 100) + 'vh',
@@ -27,7 +30,7 @@ export const SpawnPoint: React.FC<ISpawnPoint> = ({ position, name }) => {
     >
       <div className={ styles.icon }>
         <Filter.Gradient
-          mouse={{ onMouseMove: gradient }}
+          mouse={{ onMouseMove: gradient ? true : active }}
         />
         <IconLocation />
       </div>

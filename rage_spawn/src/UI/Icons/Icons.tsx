@@ -12,3 +12,19 @@ export const IconLocation = () => (
     </defs>
   </svg>
 );
+
+export const IconHouse = () => (
+  <svg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <g opacity='0.5'>
+      <path d='M18.4 38V27.0588H25.6V38H34.6V23.4118H40L22 7L4 23.4118H9.4V38H18.4Z' fill='white' />
+    </g>
+  </svg>
+);
+
+export const IconLastPosition = () => (
+  <svg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <g opacity='0.5'>
+      <path d='M29.632 15.368C27.526 13.262 24.772 12.2 22 12.2V23L14.368 30.632C18.58 34.844 25.42 34.844 29.65 30.632C33.862 26.42 33.862 19.58 29.632 15.368ZM22 5C12.064 5 4 13.064 4 23C4 32.936 12.064 41 22 41C31.936 41 40 32.936 40 23C40 13.064 31.936 5 22 5ZM22 37.4C14.044 37.4 7.6 30.956 7.6 23C7.6 15.044 14.044 8.6 22 8.6C29.956 8.6 36.4 15.044 36.4 23C36.4 30.956 29.956 37.4 22 37.4Z' fill='white' />
+    </g>
+  </svg>
+);

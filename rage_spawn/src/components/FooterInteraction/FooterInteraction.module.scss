@@ -1,0 +1,112 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .spawnToPoint {
+    height: 82px;
+    padding: 29px 26px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+
+    p {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .spawnToPointActive {
+    &:hover {
+      box-shadow: 0px 24px 66px -12px rgba(254, 79, 63, 0.69);
+    }
+  }
+
+  .contentSpawnBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      .hideName {
+        opacity: 1;
+      }
+    }
+
+    .spawnBlock {
+      width: 82px;
+      height: 82px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        svg {
+          g {
+            opacity: 1;
+          }
+        }
+      }
+
+      svg {
+        position: relative;
+        pointer-events: none;
+        z-index: 1;
+
+        g {
+          transition: .3s;
+        }
+      }
+    }
+
+    .hideName {
+      opacity: 0;
+      transition: .3s;
+      pointer-events: none;
+      top: 120%;
+      position: absolute;
+      white-space: nowrap;
+      border-radius: 2px;
+      padding: 9px 17px;
+      background: #404443;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      z-index: 1;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+
+      color: #FFFFFF;
+
+
+      &:before {
+        content: '';
+        width: 1px;
+
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #404443;
+        z-index: 0;
+      }
+    }
+  }
+}

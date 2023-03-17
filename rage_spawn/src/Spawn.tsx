@@ -1,22 +1,22 @@
 import React, { createContext, useEffect, useState } from 'react';
 import styles from './Spawn.module.scss';
 import { Title } from '@components/Title/Title';
-import { SpawnPoint } from '@components/SpawnPoint/SpawnPoint';
+import { PointsList } from '@components/PointsList/PointsList';
+import { FooterInteraction } from '@components/FooterInteraction/FooterInteraction';
 
-import configPoints from './configs/SpawnPoints.json';
-
-type IOrganizations = 'ballas' | 'gov' | 'army' | 'sheriff'; // Update Points To src/config/SpawnPoints.json
+export type ISpawns = 'ballas' | 'gov' | 'army' | 'sheriff' | 'airport' | 'house' | 'last:position'; // Update Points To src/config/SpawnPoints.json
 
 interface ICharacter {
   house: boolean
   lastPosition: boolean
-  organization?: IOrganizations
+  organization?: ISpawns
 }
 
-export const CharacterContext = createContext<{ info: ICharacter }>({ info: {} as ICharacter });
+export const CharacterContext = createContext<{ info: ICharacter, activeSpawn?: ISpawns }>({ info: {} as ICharacter });
 
 function Spawn() {
   const [character, setCharacter] = useState<ICharacter>({ house: true, lastPosition: false, organization: 'ballas' });
+  const [activeSpawn, setActiveSpawn] = useState<ISpawns | undefined>();
 
   useEffect(() => {
     // @ts-ignore
@@ -33,27 +33,12 @@ function Spawn() {
     <CharacterContext.Provider value={{ info: character }}>
       <div className={ styles.wrapper }>
         <Title />
-        <div className={ styles.pointSpawns }>
-          <SpawnPoint
-            position={
-              configPoints.filter(point => point.trigger === 'airport')[0].position
-            }
-            name='Аэропорт'
-          />
-          {
-            character.organization && (
-              <SpawnPoint
-                position={
-                  configPoints.filter(point => point.trigger === character.organization)[0].position
-                }
-                name={
-                  configPoints.filter(point => point.trigger === character.organization)[0].name
-                }
-              />
-            )
-          }
-        </div>
+        <FooterInteraction spawn={ activeSpawn } />
       </div>
+      <PointsList
+        activeSpawn={ activeSpawn }
+        setActiveSpawn={ (trigger) => setActiveSpawn(trigger) }
+      />
     </CharacterContext.Provider>
   );
 }
