@@ -1,17 +1,17 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 2.778vh;
 
   .spawnToPoint {
-    height: 82px;
-    padding: 29px 26px;
+    height: 7.593vh;
+    padding: 2.685vh 2.407vh;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.07);
     border-radius: 10px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.852vh;
+    line-height: 2.222vh;
     text-align: center;
     color: #FFFFFF;
     overflow: hidden;
@@ -26,7 +26,7 @@
 
   .spawnToPointActive {
     &:hover {
-      box-shadow: 0px 24px 66px -12px rgba(254, 79, 63, 0.69);
+      box-shadow: 0vh 2.222vh 6.111vh -1.111vh rgba(254, 79, 63, 0.69);
     }
   }
 
@@ -43,8 +43,8 @@
     }
 
     .spawnBlock {
-      width: 82px;
-      height: 82px;
+      width: 7.593vh;
+      height: 7.593vh;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.07);
       border-radius: 8px;
@@ -81,13 +81,13 @@
       position: absolute;
       white-space: nowrap;
       border-radius: 2px;
-      padding: 9px 17px;
+      padding: 0.833vh 1.574vh;
       background: #404443;
       border: 1px solid rgba(255, 255, 255, 0.07);
       z-index: 1;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 1.481vh;
+      line-height: 1.759vh;
       text-align: center;
 
       color: #FFFFFF;
@@ -95,7 +95,7 @@
 
       &:before {
         content: '';
-        width: 1px;
+        width: 0.093vh;
 
         position: absolute;
         bottom: 100%;

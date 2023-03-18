@@ -15,7 +15,7 @@ interface ICharacter {
 export const CharacterContext = createContext<{ info: ICharacter, activeSpawn?: ISpawns }>({ info: {} as ICharacter });
 
 function Spawn() {
-  const [character, setCharacter] = useState<ICharacter>({ house: true, lastPosition: false, organization: 'ballas' });
+  const [character, setCharacter] = useState<ICharacter>({ house: true, lastPosition: false, organization: undefined });
   const [activeSpawn, setActiveSpawn] = useState<ISpawns | undefined>();
 
   useEffect(() => {

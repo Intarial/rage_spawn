@@ -1,15 +1,15 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.926vh;
   cursor: default;
   position: absolute;
 
   .icon {
     position: relative;
     overflow: hidden;
-    width: 40px;
-    height: 40px;
+    width: 3.704vh;
+    height: 3.704vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,33 +19,33 @@
     svg {
       z-index: 1;
       position: relative;
-      width: 24px;
-      height: 24px;
+      width: 2.222vh;
+      height: 2.222vh;
     }
   }
 
   .textInfo {
-    padding: 8px 10px;
-    min-width: 163px;
+    padding: 0.741vh 0.926vh;
+    min-width: 15.093vh;
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.185vh;
     align-items: flex-start;
 
     span {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: 1.296vh;
+      line-height: 1.574vh;
       color: rgba(255, 255, 255, 0.6);
     }
 
     p {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 1.667vh;
+      line-height: 2.037vh;
       color: #FFFFFF;
     }
   }

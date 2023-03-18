@@ -1,5 +1,5 @@
 {
   "spawnAirport": true,
-  "spawnHouse": true,
+  "spawnHouse": false,
   "spawnOrganization": true
 }

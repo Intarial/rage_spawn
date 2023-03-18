@@ -3,11 +3,11 @@
 .wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 1.389vh;
 
   .icon {
-    width: 67px;
-    height: 67px;
+    width: 6.204vh;
+    height: 6.204vh;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 5px;
@@ -28,20 +28,20 @@
   .textContent {
     display: flex;
     flex-direction: column;
-    margin-top: -10px;
+    margin-top: -0.926vh;
 
     h1 {
       font-weight: 700;
-      font-size: 48px;
-      line-height: 59px;
+      font-size: 4.444vh;
+      line-height: 5.463vh;
       color: #FFFFFF;
     }
 
     p {
-      width: 373px;
+      width: 34.537vh;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 1.667vh;
+      line-height: 2.037vh;
       color: rgba(255, 255, 255, 0.6);
     }
   }
